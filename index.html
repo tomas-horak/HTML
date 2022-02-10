@@ -48,25 +48,33 @@
        <input type="radio" name="Choice2" value="Choice2">
        <label for="Choice2">Choice 2</label>
         </div>
-       <div>
+       <div id="match-center">
        <input type="radio" name="Choice1" value="Choice1">
-       <label for="Choice1">Jiné: <textarea name="Choice3" id="Choice3" cols="30" rows="1" id="text-area"></textarea></label>
+       <label for="Choice1">Jiné:<textarea name="Choice3" id="Choice3" cols="60" rows="1" id="text-area"></textarea></label>
         </div>
      
 
     </label>
-    <button type="reset">Zrušit výběr</button>
+    <button type="reset" id="reset">Zrušit výběr</button>
 
 </section>
 <section id="checkbox">
     <h1>This is a checkbox question</h1>
     <h2>Similar to multiple choice; multiple responses available</h2>
+    <div id="radio-buttons">
+    <div>
     <input type="checkbox" name="Choice_1">
     <label for="Choice_1">Choice 1</label>
+    </div>
+    <div>
     <input type="checkbox" name="Choice_2">
     <label for="Choice_2">Choice 2</label>
+</div>
+<div>
     <input type="checkbox" name="Choice_3">
-    <label for="Choice_3">Jiné:<textarea name="Choice_3" id="Choice_3" cols="30" rows="1"></textarea></label>
+    <label for="Choice_3">Jiné:<textarea name="Choice_3" id="Choice3" cols="60" rows="1"></textarea></label>
+</div>
+</div>
 </section>
 
 <section id="dropdown"> 
@@ -74,81 +82,14 @@
     <h2>Drop down menu format</h2>
 <label for="dropdown"></label>
 <select name="dropdown" id="select">
+    <option disabled selected hidden>Vyberte</option>
     <option>Choice 1</option>
     <option>Choice 2</option>
     <option>Choice 3</option>
 </select>
 </section>
 
-<section id="scale">
-    <h1>This is a scale question</h1>
-    <h2>You may change the scale up to 10; Similar to Likert Scale</h2>
-    <label for="scale">
-    <p>Strongly disagree</p>
-    <input type="radio" name="" value="Choice1">
-    <label for="Choice1">1</label>
-    <input type="radio" name="" value="Choice2">
-    <label for="Choice2">2</label>
-    <input type="radio" name="" value="Choice3">
-    <label for="Choice3">3</label>
-    <input type="radio" name="" value="Choice4">
-    <label for="Choice4">4</label>
-    <input type="radio" name="" value="Choice5">
-    <label for="Choice3">5</label>
-    <p>Strongly agree</p>
-    <button type="reset">Zrušit výběr</button>
- </label>
-</section>
 
-<section id="grid-question">
-<h1>This is a grid question</h1>
-<h2>Rate Your Google Form Knowledge - Multiple Responses Available</h2>
-<table>
-    <tr>
-        <th></th>
-        <th>I get it</th>
-        <th>I have a pretty good grasp</th>
-        <th>Neutral</th>
-        <th>I am struggling</th>
-        <th>I don't get it</th>
-    </tr>
-    <tr>
-        <td>Uses for Google Forms</td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-    </tr>
-    <tr>
-        <td>Creating Google Forms</td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-    </tr>
-    <tr>
-        <td>Sending completed Google Form</td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-    </tr>
-    <tr>
-        <td>Using results from Google Forms</td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-        <td><input type="radio"></td>
-    </tr>
-    
-
-</table>
-<button type="reset">Zrušit výběr</button>
-</section>
 
 
 
