@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+<div id="container">
+<header>
+    
+    <section id="header-box">
+    <div id="darker-box"></div>
+    <h1 id="main-header">Google Form Sample</h1>
+    <h2 id="complementary-header">Here are all the question types.</h2>
+</section>
+</header>
+<!--začátek dotazníků-->
+<form action="exapmleserver.com" method="post" id="form-wrap">
+<section id="text-question">
+    <h1>This is a text question</h1>
+    <h2>Limited space for typed response. Great space for name of respondee or short answer</h2>
+<label for="text">
+    <input type="text" placeholder="Vaše odpověď" name="text" >
+</label>
+</section>
+<section id="paragraph-question">
+    <h1>This is a paragraph question</h1>
+    <h2>Extended space for longer answer</h2>
+    <label for="paragraph">
+        <input type="text" placeholder="Vaše odpověď">
+    </label>
+</section>
+
+<section id="multiple-choice">
+    <h1>This is a multiple choice question</h1>
+    <h2>May click one of the choices or respond to "other"</h2>
+    <label for="multiple-choice" id="radio-buttons">
+        <div>
+       <input type="radio" name="Choice1" value="Choice1">
+       <label for="Choice1">Choice 1</label>
+        </div><div>
+       <input type="radio" name="Choice2" value="Choice2">
+       <label for="Choice2">Choice 2</label>
+        </div>
+       <div>
+       <input type="radio" name="Choice1" value="Choice1">
+       <label for="Choice1">Jiné: <textarea name="Choice3" id="Choice3" cols="30" rows="1" id="text-area"></textarea></label>
+        </div>
+     
+
+    </label>
+    <button type="reset">Zrušit výběr</button>
+
+</section>
+<section id="checkbox">
+    <h1>This is a checkbox question</h1>
+    <h2>Similar to multiple choice; multiple responses available</h2>
+    <input type="checkbox" name="Choice_1">
+    <label for="Choice_1">Choice 1</label>
+    <input type="checkbox" name="Choice_2">
+    <label for="Choice_2">Choice 2</label>
+    <input type="checkbox" name="Choice_3">
+    <label for="Choice_3">Jiné:<textarea name="Choice_3" id="Choice_3" cols="30" rows="1"></textarea></label>
+</section>
+
+<section id="dropdown"> 
+    <h1>This is a choose from a list question</h1>
+    <h2>Drop down menu format</h2>
+<label for="dropdown"></label>
+<select name="dropdown" id="select">
+    <option>Choice 1</option>
+    <option>Choice 2</option>
+    <option>Choice 3</option>
+</select>
+</section>
+
+<section id="scale">
+    <h1>This is a scale question</h1>
+    <h2>You may change the scale up to 10; Similar to Likert Scale</h2>
+    <label for="scale">
+    <p>Strongly disagree</p>
+    <input type="radio" name="" value="Choice1">
+    <label for="Choice1">1</label>
+    <input type="radio" name="" value="Choice2">
+    <label for="Choice2">2</label>
+    <input type="radio" name="" value="Choice3">
+    <label for="Choice3">3</label>
+    <input type="radio" name="" value="Choice4">
+    <label for="Choice4">4</label>
+    <input type="radio" name="" value="Choice5">
+    <label for="Choice3">5</label>
+    <p>Strongly agree</p>
+    <button type="reset">Zrušit výběr</button>
+ </label>
+</section>
+
+<section id="grid-question">
+<h1>This is a grid question</h1>
+<h2>Rate Your Google Form Knowledge - Multiple Responses Available</h2>
+<table>
+    <tr>
+        <th></th>
+        <th>I get it</th>
+        <th>I have a pretty good grasp</th>
+        <th>Neutral</th>
+        <th>I am struggling</th>
+        <th>I don't get it</th>
+    </tr>
+    <tr>
+        <td>Uses for Google Forms</td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+    </tr>
+    <tr>
+        <td>Creating Google Forms</td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+    </tr>
+    <tr>
+        <td>Sending completed Google Form</td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+    </tr>
+    <tr>
+        <td>Using results from Google Forms</td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+        <td><input type="radio"></td>
+    </tr>
+    
+
+</table>
+<button type="reset">Zrušit výběr</button>
+</section>
+
+
+
+<button type="reset">Vymazat formulář</button>
+<button type="submit">Submit</button>
+</form>
+
+
+
+
+<footer>
+    <p>Nikdy přes Formuláře Google neposílejte hesla.</p>
+
+    <section id="odkazy">
+        <a href="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeI8_vYyaJgM7SJM4Y9AWfLq-tglWZh6yt7bEXEOJr_L-hV1A/reportabuse?source=https://docs.google.com/forms/d/e/1FAIpQLSeI8_vYyaJgM7SJM4Y9AWfLq-tglWZh6yt7bEXEOJr_L-hV1A/viewform?formkey%3DdGx0b1ZrTnoyZDgtYXItMWVBdVlQQWc6MQ">
+            Nahlásit zneužití 
+        </a>
+        -
+        <a href="https://policies.google.com/terms">Smluvní podmínky služby</a>
+        -
+        <a href="https://policies.google.com/privacy">Zásady ochrany soukromí</a>
+    </section>
+
+
+</footer>
+
+
+</div>  
+</body>
+</html>
